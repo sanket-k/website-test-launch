@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="desktop-container">
+        <div class="desktop-desktop">
+          <div class="desktop-hero-section">
+            <div class="desktop-menu-bar">
+              <span class="desktop-text10">GD.</span>
+              <div class="desktop-menu-items">
+                <span class="desktop-text11">About</span>
+                <span class="desktop-text12">Services</span>
+                <span class="desktop-text13">Our Work</span>
+                <button class="desktop-button1">
+                  <span class="desktop-text14">Enrol Now</span>
+                </button>
+              </div>
+            </div>
+            <span class="desktop-text15">Learn the art of Game Dev</span>
+            <span class="desktop-text16">
+              This is a comprehensive course on Game Development. You will learn
+              everything from generating an idea to publishing your games to
+              different platforms.
+            </span>
+            <button class="desktop-button2">
+              <img
+                src="public/pencilalti112-8gdi.svg"
+                alt="PencilAltI112"
+                class="desktop-pencil-alt"
+              />
+              <span class="desktop-text17">Enrol Now</span>
+            </button>
+            <div class="desktop-achievements">
+              <img
+                src="public/rectangle111132-jwc-200h.png"
+                alt="Rectangle111132"
+                class="desktop-rectangle111"
+              />
+              <img
+                src="public/rectangle101130-zbj6-200h.png"
+                alt="Rectangle101130"
+                class="desktop-rectangle101"
+              />
+              <span class="desktop-text18">32K</span>
+              <span class="desktop-text19">Students Enrolled</span>
+            </div>
+            <div class="desktop-group1">
+              <img
+                src="public/rectangle111135-6r0z-200h.png"
+                alt="Rectangle111135"
+                class="desktop-rectangle112"
+              />
+              <img
+                src="public/rectangle101136-jbw8-200h.png"
+                alt="Rectangle101136"
+                class="desktop-rectangle102"
+              />
+              <span class="desktop-text20">4.7</span>
+              <span class="desktop-text21">Overall Rating</span>
+              <img
+                src="public/emojionestar1139-d9c.svg"
+                alt="emojionestar1139"
+                class="desktop-emojionestar"
+              />
+            </div>
+            <img
+              src="public/heroimage11127-3904-500w.png"
+              alt="heroimage11127"
+              class="desktop-heroimage1"
+            />
+          </div>
+          <div class="desktop-testimonials-section1">
+            <div class="desktop-testimonials-left1">
+              <img
+                src="public/rectangle121527-ivag-200w.png"
+                alt="Rectangle121527"
+                class="desktop-rectangle121"
+              />
+              <div class="desktop-testimonial1">
+                <div class="desktop-testimonial-content1">
+                  <span class="desktop-text22">
+                    This is a great course. It helped me a lot. Thank you :)
+                  </span>
+                </div>
+                <div class="desktop-name-image1">
+                  <div class="desktop-testimonial-name1">
+                    <span class="desktop-text23">Jane Cooper</span>
+                    <span class="desktop-text24">Developer, Sony</span>
+                  </div>
+                  <div class="desktop-testimonial-image1">
+                    <img
+                      src="public/ellipse1i159-lwlg-200h.png"
+                      alt="Ellipse1I159"
+                      class="desktop-ellipse11"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-testimonial2">
+                <div class="desktop-testimonial-content2">
+                  <span class="desktop-text25">Amazing Work! Well done!</span>
+                </div>
+                <div class="desktop-name-image2">
+                  <div class="desktop-testimonial-name2">
+                    <span class="desktop-text26">Jacob Jones</span>
+                    <span class="desktop-text27">Designer, Facebook</span>
+                  </div>
+                  <div class="desktop-testimonial-image2">
+                    <img
+                      src="public/ellipse1i151-ajcv-200h.png"
+                      alt="Ellipse1I151"
+                      class="desktop-ellipse12"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-testimonials-right1">
+              <div class="desktop-heading1">
+                <span class="desktop-text28">What our students say</span>
+              </div>
+              <span class="desktop-text29">
+                <span>
+                  All students get access to all the videos and also the source
+                  code of the projects.
+                </span>
+                <br />
+                <span>
+                  You will also have access to a private Discord channel where
+                  you can discuss your doubts.
+                </span>
+              </span>
+              <button class="desktop-button3">
+                <span class="desktop-text33">Learn More</span>
+              </button>
+            </div>
+          </div>
+          <div class="desktop-testimonials-section2">
+            <div class="desktop-testimonials-left2">
+              <img
+                src="public/rectangle123913-32ib-200w.png"
+                alt="Rectangle123913"
+                class="desktop-rectangle122"
+              />
+              <div class="desktop-testimonial3">
+                <div class="desktop-testimonial-content3">
+                  <span class="desktop-text34">
+                    This is a great course. It helped me a lot. Thank you :)
+                  </span>
+                </div>
+                <div class="desktop-name-image3">
+                  <div class="desktop-testimonial-name3">
+                    <span class="desktop-text35">Jane Cooper</span>
+                    <span class="desktop-text36">Developer, Sony</span>
+                  </div>
+                  <div class="desktop-testimonial-image3">
+                    <img
+                      src="public/ellipse1i391-hnqh-200h.png"
+                      alt="Ellipse1I391"
+                      class="desktop-ellipse13"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-testimonial4">
+                <div class="desktop-testimonial-content4">
+                  <span class="desktop-text37">Amazing Work! Well done!</span>
+                </div>
+                <div class="desktop-name-image4">
+                  <div class="desktop-testimonial-name4">
+                    <span class="desktop-text38">Jacob Jones</span>
+                    <span class="desktop-text39">Designer, Facebook</span>
+                  </div>
+                  <div class="desktop-testimonial-image4">
+                    <img
+                      src="public/ellipse1i391-npp2-200h.png"
+                      alt="Ellipse1I391"
+                      class="desktop-ellipse14"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-testimonials-right2">
+              <div class="desktop-heading2">
+                <span class="desktop-text40">What our students say</span>
+              </div>
+              <span class="desktop-text41">
+                <span>
+                  All students get access to all the videos and also the source
+                  code of the projects.
+                </span>
+                <br />
+                <span>
+                  You will also have access to a private Discord channel where
+                  you can discuss your doubts.
+                </span>
+              </span>
+              <button class="desktop-button4">
+                <span class="desktop-text45">Learn More</span>
+              </button>
+            </div>
+          </div>
+          <div class="desktop-courses-section">
+            <div class="desktop-heading3">
+              <span class="desktop-text46">Our Courses</span>
+            </div>
+            <div class="desktop-course1">
+              <img
+                src="public/rectangle7i154-41zr-300h.png"
+                alt="Rectangle7I154"
+                class="desktop-rectangle71"
+              />
+              <div class="desktop-titleand-duration1">
+                <span class="desktop-text47">
+                  <span>Game Design Essentials</span>
+                  <br />
+                </span>
+                <div class="desktop-frame11">
+                  <img
+                    src="public/clocki154-8spu.svg"
+                    alt="ClockI154"
+                    class="desktop-clock1"
+                  />
+                  <span class="desktop-text50">8 HRS</span>
+                </div>
+              </div>
+              <img
+                src="public/rectangle8i154-udpe-200h.png"
+                alt="Rectangle8I154"
+                class="desktop-rectangle81"
+              />
+            </div>
+            <div class="desktop-course2">
+              <img
+                src="public/rectangle7i207-4988-300h.png"
+                alt="Rectangle7I207"
+                class="desktop-rectangle72"
+              />
+              <div class="desktop-titleand-duration2">
+                <span class="desktop-text51">
+                  <span>Game Design Essentials</span>
+                  <br />
+                </span>
+                <div class="desktop-frame12">
+                  <img
+                    src="public/clocki207-hjf3.svg"
+                    alt="ClockI207"
+                    class="desktop-clock2"
+                  />
+                  <span class="desktop-text54">8 HRS</span>
+                </div>
+              </div>
+              <img
+                src="public/rectangle8i207-lzz-200h.png"
+                alt="Rectangle8I207"
+                class="desktop-rectangle82"
+              />
+            </div>
+            <div class="desktop-course3">
+              <img
+                src="public/rectangle7i155-h2n-300h.png"
+                alt="Rectangle7I155"
+                class="desktop-rectangle73"
+              />
+              <div class="desktop-titleand-duration3">
+                <span class="desktop-text55">
+                  Unity Game Engine Fundamentals
+                </span>
+                <div class="desktop-frame13">
+                  <img
+                    src="public/clocki155-fej.svg"
+                    alt="ClockI155"
+                    class="desktop-clock3"
+                  />
+                  <span class="desktop-text56">8 HRS</span>
+                </div>
+              </div>
+              <img
+                src="public/rectangle8i155-5c5q-200h.png"
+                alt="Rectangle8I155"
+                class="desktop-rectangle83"
+              />
+            </div>
+            <button class="desktop-button5">
+              <span class="desktop-text57">All Courses</span>
+            </button>
+          </div>
+          <div class="desktop-app-section">
+            <div class="desktop-heading4">
+              <span class="desktop-text58">Get our App</span>
+            </div>
+            <span class="desktop-text59">
+              You can use our App for better experience on smartphones
+            </span>
+            <div class="desktop-frame2">
+              <img
+                src="public/vector2053-ji7e.svg"
+                alt="Vector2053"
+                class="desktop-vector1"
+              />
+              <span class="desktop-text60">App Store</span>
+            </div>
+            <div class="desktop-frame3">
+              <img
+                src="public/vector2064-f6n2.svg"
+                alt="Vector2064"
+                class="desktop-vector2"
+              />
+              <span class="desktop-text61">App Store</span>
+            </div>
+            <div class="desktop-frame4">
+              <div class="desktop-group8">
+                <img
+                  src="public/vector2055-u4ij.svg"
+                  alt="Vector2055"
+                  class="desktop-vector3"
+                />
+                <img
+                  src="public/vector2056-8tdy.svg"
+                  alt="Vector2056"
+                  class="desktop-vector4"
+                />
+                <img
+                  src="public/vector2057-wr2.svg"
+                  alt="Vector2057"
+                  class="desktop-vector5"
+                />
+                <img
+                  src="public/vector2058-s9sk.svg"
+                  alt="Vector2058"
+                  class="desktop-vector6"
+                />
+              </div>
+              <span class="desktop-text62">Google Play</span>
+            </div>
+          </div>
+          <div class="desktop-footer">
+            <div class="desktop-footer-links1">
+              <span class="desktop-text63">Quick Links</span>
+              <span class="desktop-text64">About Us</span>
+              <span class="desktop-text65">Contact Us</span>
+              <span class="desktop-text66">Privacy Policy</span>
+              <span class="desktop-text67">Terms &amp; Conditions</span>
+            </div>
+            <div class="desktop-footer-links2">
+              <span class="desktop-text68">Course</span>
+              <span class="desktop-text69">Log In</span>
+              <span class="desktop-text70">Download</span>
+              <span class="desktop-text71">All Courses</span>
+            </div>
+            <span class="desktop-text72">
+              This website is developed by GTCoding © 2021
+            </span>
+            <div class="desktop-akariconsfacebookfill"></div>
+            <div class="desktop-group9">
+              <span class="desktop-text73">Contact Us</span>
+              <span class="desktop-text74">contact@email.com</span>
+              <img
+                src="public/vector2010-4bb8.svg"
+                alt="Vector2010"
+                class="desktop-vector7"
+              />
+              <img
+                src="public/vector2010-1acw.svg"
+                alt="Vector2010"
+                class="desktop-vector8"
+              />
+              <img
+                src="public/rectangle142011-ra48-200h.png"
+                alt="Rectangle142011"
+                class="desktop-rectangle14"
+              />
+              <span class="desktop-text75">Email Address</span>
+              <img
+                src="public/rectangle152011-lrpr-200h.png"
+                alt="Rectangle152011"
+                class="desktop-rectangle15"
+              />
+              <span class="desktop-text76">Subscribe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
